@@ -1,0 +1,17 @@
+.container{
+border: 2px solid black;
+border-radius: 19px;
+height: 200px;
+width: 300px;
+margin-top: 66px;
+margin-left: 575px;
+background-color: rgba(114, 148, 176, 0.775);
+}
+#quoteDisplay{
+    margin: 8px;
+    background-color: darkcyan;
+}
+.btn{
+    margin-left: 669px;
+   margin-top: 8px;
+}

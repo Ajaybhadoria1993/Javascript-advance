@@ -1,0 +1,14 @@
+body {
+    background-color: darkcyan;
+  }
+
+  .clock {
+    align-items: center;
+    justify-content: center;
+    padding: 74px;
+    margin: 100px;
+    border-radius: 191px;
+    border: 2px solid black;
+    background-color: darkgrey;
+   
+  }

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <header class="head"><h3 class="heading">ID card generator</h3></header>
+        <div class="row">
+          <div class="col-sm-8">
+              <div class="inputfield">
+                  <form onsubmit="return false">
+                <h4>Enter Student details</h4><br>
+                  <label>Enter your Name:</label><br>
+                  <input type="text" id="Sname"><br>
+                  <label>Enter Collage Name:</label><br>
+                  <input type="text" id="Cname"><br>
+                  <label>Enter Location:</label><br>
+                  <input type="text" id="Lname"><br>
+                <h4>Enter student picture</h4>
+                <div class="input-group">
+                    <input type="file"  id="file" accept="image/*" onchange="loadimage(event)">
+                     </div>
+              
+                     <button  onclick="generatecard()" type="submit">Submit</button>
+                    </form>
+                    </div>
+              
+          </div>
+          <div class="col-sm-4">
+            <h5>Generate ID card</h5><br>
+            <div class="card"> 
+                 <div class="first">
+                    <img src="" class="imageupload" id="imgdisplayed"> 
+            </div>
+            <div class="second"> 
+                <div id="collage card">
+                <span><b>Name:</b></span>
+                <span id="uname"></span> 
+            </div>
+            <div>
+                <span><b>Collage Name:</b></span>
+                <span id="ucollage"></span> 
+
+            </div>
+            <div>
+                <span><b>Location:</b></span>
+                <span id="ulocation"></span>
+            </div>
+        </div>
+           </div>
+          
+           
+          </div>
+          
+
+        </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   <script src="index.js"></script>
+  </body>
+</html>
